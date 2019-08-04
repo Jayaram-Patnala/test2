@@ -1,11 +1,9 @@
 pipeline {
-    agent {
-        docker { hello-world }
-    }
+
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                mkdir mineTest
             }
         }
     }
